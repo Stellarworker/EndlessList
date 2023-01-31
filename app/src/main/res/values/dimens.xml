@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ItemPost begin -->
+    <dimen name="item_post_root_margin_horizontal">5dp</dimen>
+    <dimen name="item_post_root_margin_top">5dp</dimen>
+    <dimen name="item_post_root_corner_radius">5dp</dimen>
+    <dimen name="item_post_root_elevation">5dp</dimen>
+    <dimen name="item_post_title_margin_horizontal">20dp</dimen>
+    <dimen name="item_post_title_margin_vertical">10dp</dimen>
+    <dimen name="item_post_title_text_size">15sp</dimen>
+    <dimen name="item_post_crossposts_margin_start">50dp</dimen>
+    <dimen name="item_post_crossposts_margin_bottom">10dp</dimen>
+    <dimen name="item_post_crossposts_value_margin_start">5dp</dimen>
+    <dimen name="item_post_crossposts_value_text_size">15sp</dimen>
+    <dimen name="item_post_comments_margin_start">230dp</dimen>
+    <dimen name="item_post_comments_margin_bottom">10dp</dimen>
+    <dimen name="item_post_comments_value_margin_start">5dp</dimen>
+    <dimen name="item_post_comments_value_text_size">15sp</dimen>
+    <!-- ItemPost end -->
+
+</resources>
