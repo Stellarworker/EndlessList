@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_post_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/item_post_root_margin_horizontal"
+    android:layout_marginTop="@dimen/item_post_root_margin_top"
+    app:cardCornerRadius="@dimen/item_post_root_corner_radius"
+    app:cardElevation="@dimen/item_post_root_elevation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_post_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_post_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/item_post_title_margin_horizontal"
+            android:layout_marginVertical="@dimen/item_post_title_margin_vertical"
+            android:textSize="@dimen/item_post_title_text_size"
+            app:layout_constraintBottom_toTopOf="@+id/item_post_comments"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/item_post_crossposts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/item_post_crossposts_margin_start"
+            android:layout_marginBottom="@dimen/item_post_crossposts_margin_bottom"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item_post_title">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_star_24" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_post_crossposts_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/item_post_crossposts_value_margin_start"
+                android:textSize="@dimen/item_post_crossposts_value_text_size" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/item_post_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/item_post_comments_margin_start"
+            android:layout_marginBottom="@dimen/item_post_comments_margin_bottom"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item_post_title">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_comment_24" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_post_comments_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/item_post_comments_value_margin_start"
+                android:textSize="@dimen/item_post_comments_value_text_size" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
